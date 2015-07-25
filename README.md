@@ -1,0 +1,1 @@
+# frege-gradle-release-plugin
