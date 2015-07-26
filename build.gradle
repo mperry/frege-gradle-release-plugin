@@ -1,4 +1,19 @@
 
+
+buildscript {
+    repositories {
+        mavenLocal()
+        maven {
+            url = "https://oss.sonatype.org/content/groups/public"
+        }
+        mavenCentral()
+    }
+    dependencies {
+        classpath "io.codearte.gradle.nexus:gradle-nexus-staging-plugin:0.5.3"
+    }
+}
+
+apply plugin: 'io.codearte.nexus-staging'
 apply plugin: 'java'
 
 repositories {
