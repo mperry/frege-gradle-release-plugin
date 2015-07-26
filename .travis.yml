@@ -1,9 +1,5 @@
 language: java
 jdk:
 - oraclejdk7
-sudo: false
-env:
-  global:
-
-before_script:
+before_install:
  - chmod +x gradlew
