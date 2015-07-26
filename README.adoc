@@ -3,3 +3,5 @@
 This is a project to abstract common Gradle settings from various Frege components to avoid repetition.
 
 - Travis CI: https://travis-ci.org/mperry/frege-gradle-release-plugin
+- Sonatype repo: https://oss.sonatype.org/content/groups/public/com/github/mperry/frege-gradle-release-plugin/
+
