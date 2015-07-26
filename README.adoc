@@ -1,1 +1,3 @@
-# frege-gradle-release-plugin
+= Frege Gradle Release Plugin
+
+This is a project to abstract common Gradle settings from various Frege components to avoid repetition.
