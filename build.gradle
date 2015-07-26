@@ -21,9 +21,32 @@ apply plugin: "signing"
 
 defaultTasks "build"
 
-repositories {
-    jcenter()
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+
+ext {
+    baseVersion = "0.1"
+    isSnapshot = true
+    snapshotAppendix = "-SNAPSHOT"
+    projectVersion = baseVersion + (isSnapshot ? snapshotAppendix : "")
+
 }
+
+apply from: "gradle/sonatype.gradle"
+
+repositories {
+    mavenLocal()
+    maven {
+        url = sonatypeRepositoryUrl
+    }
+    mavenCentral()
+}
+
+
+version = projectVersion
+group = groupName
 
 dependencies {
     compile 'org.slf4j:slf4j-api:1.7.12'
@@ -34,3 +57,11 @@ dependencies {
 
     testCompile 'junit:junit:4.12'
 }
+
+
+nexusStaging {
+    packageGroup = groupName
+    stagingProfileId = "a622b6773bea07"
+}
+
+
