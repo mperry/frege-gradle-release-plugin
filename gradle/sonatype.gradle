@@ -7,22 +7,22 @@ ext {
     sonatypeReleaseUrl = "$sonatypeBaseUrl/service/local/staging/deploy/maven2/"
     sonatypeUploadUrl = isSnapshot ? sonatypeSnapshotUrl : sonatypeReleaseUrl
 
-    projectUrl = "https://github.com/Frege/frege-gradle-plugin"
-    projectName = "Frege Gradle Plugin"
+    projectUrl = "https://github.com/mperry/frege-gradle-release-plugin"
+    projectName = "Frege Gradle Release Plugin"
     pomProjectName = projectName
-    baseJarName = "gradle-frege-plugin"
+    baseJarName = "gradle-frege-release-plugin"
 
-    groupName = "org.frege-lang"
-    scmUrl = "git://github.com/Frege/frege-gradle-plugin.git"
-    scmGitFile = "scm:git@github.com:Frege/frege-gradle-plugin.git"
-    projectDescription = "Frege Gradle plugin"
+    groupName = "com.github.mperry"
+    scmUrl = "git://github.com/frege-gradle-release-plugin/frege-gradle-release-plugin.git"
+    scmGitFile = "scm:git@github.com:mperry/frege-gradle-release-plugin.git"
+    projectDescription = "Frege Gradle Release Plugin"
 
     licenseName = "BSD 3-clause license"
     licenseUrl = 'http://opensource.org/licenses/BSD-3-Clause'
 
     organisation = groupName
 
-    primaryEmail = "frege-programming-language@googlegroups.com"
+    primaryEmail = "maperry78@yahoo.com.au"
 
 }
 
